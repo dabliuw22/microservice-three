@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: microservice-three
+server:
+  port: 8100
+eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
+#microservice-two:
+#  ribbon:
+#    listOfServers: http://localhost:8001,http://localhost:8000
